@@ -8,6 +8,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import Techs from "./Techs";
 import { SoundContext } from "../../state/SoundContext";
+// add git
 
 const Credits = () => {
   const { entryMusic, muteMusic } = useContext(SoundContext);
