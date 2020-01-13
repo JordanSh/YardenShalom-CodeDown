@@ -8,14 +8,13 @@ import { FaWhatsapp } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import Techs from "./Techs";
 import { SoundContext } from "../../state/SoundContext";
-// add git
 
 const Credits = () => {
   const { entryMusic, muteMusic } = useContext(SoundContext);
 
   entryMusic.muted = muteMusic;
 
-  const createMaker = ({ name, gitHub, linkdin, email, phone }) => {
+  const createMaker = ({ name, gitHub, linkedin, email, phone }) => {
     return (
       <Maker>
         {name}
@@ -25,7 +24,7 @@ const Credits = () => {
               <GoMarkGithub />
             </LinkHref>
 
-            <LinkHref href={linkdin} target="_blank">
+            <LinkHref href={linkedin} target="_blank">
               <FaLinkedin />
             </LinkHref>
 
@@ -45,15 +44,15 @@ const Credits = () => {
   const yarden = {
     name: "Yarden Shalom",
     gitHub: "https://github.com/JordanSh",
-    linkdin: "https://www.linkedin.com/in/yarden-shalom-a85a70197/",
-    email: "yardeninho@gmail.com",
+    linkedin: "https://www.linkedin.com/in/yarden-shalom-a85a70197/",
+    email: "yarden.shalom9@gmail.com",
     phone: "054-9100290"
   };
 
   const oren = {
     name: "Oren Kesler",
     gitHub: "",
-    linkdin: "https://www.linkedin.com/in/oren-kesler-934245144",
+    linkedin: "https://www.linkedin.com/in/oren-kesler-934245144",
     email: "orenkes12@gmail.com",
     phone: "054-6308658"
   };
@@ -73,10 +72,10 @@ const Credits = () => {
           {createMaker({ ...oren })}
         </MakersBox>
         <StyledLoginLink to="/mainmenu">Go To Site</StyledLoginLink>
-        <NoteAboutResposiveness>
+        {/* <NoteAboutResposiveness>
           *Currently this game does not feature responsive view, therefore
           there's might be a need for you to zoom in/out.
-        </NoteAboutResposiveness>
+        </NoteAboutResposiveness> */}
 
         <Techs />
 
@@ -156,11 +155,11 @@ const Logo = styled.div`
 
 const OriginalPromise = styled.div``;
 
-const NoteAboutResposiveness = styled.div`
-  font-size: 18px;
-  margin-top: 24px;
-  color: red;
-`;
+// const NoteAboutResposiveness = styled.div`
+//   font-size: 18px;
+//   margin-top: 24px;
+//   color: red;
+// `;
 
 const MakersBox = styled.div`
   ${flexbox({ jc: "space-around" })}
