@@ -4,7 +4,7 @@ const level2 = {
   background: "./images/Senior-background.jpg",
   character: "./images/SeniorCharacter.gif",
   opponentHP: 4,
-  music: "../sounds/HavanaSong.mp3",
+  music: "../sounds/ShapeOfYouSong.mp3",
   opponentOpeningSentence:
     "Well hello, I'm the senior around here, it's dead-line day so lets keep this quick. I'll show you some code, lets see what you got.",
   noInput: `You wanna tell me you don't know this one?`,

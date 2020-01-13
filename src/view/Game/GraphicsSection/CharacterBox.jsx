@@ -140,8 +140,10 @@ const StyledHeart = styled.div`
 `;
 
 const CodeSnippetBox = styled.div`
-  flex-basis: 45%;
-  height: 100%;
+  /* flex-basis: 45%;
+  height: 100%; */
+  width: 514px;
+  height: 350px;
   background-image: url("./images/imacScreen.png");
   background-position: center;
   background-size: contain;
@@ -176,7 +178,7 @@ const Stickers = styled.div`
   position: absolute;
   width: 75%;
   height: 10.5%;
-  bottom: 75px;
+  bottom: 54px;
 
   ${flexbox({ jc: "space-between" })}
 `;
@@ -220,13 +222,14 @@ const CompanySticker = styled.div`
 
 const Credits = styled.div`
   flex-basis: 20%;
-  height: 100%;
+  height: 95%;
   ${flexbox()}
   white-space: pre-wrap;
   font-family: sans-serif;
   font-size: 10px;
   line-height: 14px;
   color: gray;
+  font-weight: bold;
 `;
 
 const OpponentCharacter = styled(HeroCharacter)`

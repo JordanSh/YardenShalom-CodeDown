@@ -4,7 +4,7 @@ const level1 = {
   background: "./images/HR-background.jpg",
   character: "./images/HRCharacter.gif",
   opponentHP: 3,
-  music: "../sounds/ShapeOfYouSong.mp3",
+  music: "../sounds/HavanaSong.mp3",
   noInput: `I'll need an answer down here in the exam`,
   opponentOpeningSentence:
     "Welcome to our offices, I'm from HR. You can see the questions on the computer below. TYPE JUST THE LETTER of your answer in the exam form",

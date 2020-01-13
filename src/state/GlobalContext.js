@@ -6,7 +6,7 @@ const Provider = GlobalContext.Provider;
 
 export const GlobalProvider = ({ children }) => {
   const [hero, setHero] = useState({
-    company: "NetCraft"
+    company: "Cybereason"
   });
   const [levelCounter, setLevelCounter] = useState(0);
   const [difficulty, setDifficulty] = useState("");

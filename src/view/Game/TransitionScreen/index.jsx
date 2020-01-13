@@ -18,7 +18,7 @@ const TransitionScreen = ({ continueSound }) => {
   } = useContext(GameContext);
 
   useEffect(() => {
-    SetOnScreenText(levelStory);
+    if (gameHandler.heroHP !== 0) SetOnScreenText(levelStory);
   }, [levelCounter]);
 
   // =========================================//

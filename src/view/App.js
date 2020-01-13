@@ -34,7 +34,7 @@ const App = () => {
           </MuteSFXs>
         </Muters>
         <Switch>
-          <Route exact path="/" component={Credits} />
+          <Route exact path="/" component={MainMenu} />
           <Route path="/mainmenu" component={MainMenu} />
           <Route path="/credits" component={Credits} />
           <Route path="/characterselect" component={CharacterSelect} />
@@ -53,8 +53,8 @@ export default App;
 const MainSiteWrapper = styled.div`
   /* ${flexbox()}; */
   height: 90vh;
-  min-height: 1000px;
-  max-height: 1000px;
+  min-height: 900px;
+  max-height: 900px;
   width: 90vw;
   min-width: 1600px;
   max-width: 1600px;
@@ -62,20 +62,34 @@ const MainSiteWrapper = styled.div`
   background: #050505;
   margin: 0 auto;
   border: 10px ridge rgba(96, 99, 102, 0.6);
-  /* @media(max-width: 1280px){
-    min-width: 1100px;
-    max-width: 1100px;
-    min-height: 500px;
-    max-height: 500px;
-    border: red 3px solid;
-  } */
-
-  /* border: 3px solid red; */
+  
   position: relative;
+
+  @media (max-width: 1920px){
+    transform: scale(0.9);
+  }
+  @media (max-width: 1600px){
+    transform: scale(0.7);
+  }
+  @media (max-width: 1400px){
+    transform: scale(0.5);
+  }
+  @media (max-width: 1024px){
+    transform: scale(0.4);
+  }
+  @media (max-width: 768px){
+    transform: rotateZ(90deg) scale(0.6);
+  }
+  @media (max-width: 500px){
+    transform: rotateZ(90deg) scale(0.4);
+  }
+  @media (max-width: 375px){
+    transform: rotateZ(90deg) scale(0.35);
+  }
 `;
 
 const Muters = styled.div`
-  z-index: 999;
+  z-index: 99;
   ${flexbox()}
   height: 26px;
   width: 52px;
