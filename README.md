@@ -7,3 +7,7 @@ Interview simulation kind of questions. You can select your character and diffic
 Have fun! :)
 
 yardenshalom-codedown.netlify.com
+
+you can contact me on linkedin:
+
+https://www.linkedin.com/in/yarden-shalom-a85a70197/
